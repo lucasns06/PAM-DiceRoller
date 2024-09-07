@@ -15,15 +15,16 @@
             <Setter Property="BackgroundColor" Value="#4F4F4F" ></Setter>
         </Style>
         <Style TargetType="Picker">
-            <Setter Property="TextColor" Value="White" ></Setter>
+            <Setter Property="TextColor" Value="Black" ></Setter>
             <Setter Property="BackgroundColor" Value="White" ></Setter>
-            <Setter Property="TitleColor" Value="Black" ></Setter>
+            <Setter Property="TitleColor" Value="#0F0F0F" ></Setter>
             <Setter Property="HorizontalOptions" Value="Center"></Setter>
         </Style>
     </ContentPage.Resources>
     
     <ScrollView>
         <VerticalStackLayout
+            HorizontalOptions="Center"
             BackgroundColor="white"
             Spacing="25"
             Padding="30,0">
@@ -35,20 +36,21 @@
                 />
 
             <Label 
-                x:Name="LabelResult"
+                x:Name="ResultLabel"
                 Text="6"
                 FontSize="80"
                 />
             
-            <Picker 
-                x:Name="EntryPicker"
-                Title="Quantidade de lados"
-                WidthRequest="294">
+            <Picker x:Name="SidesPicker"
+                    Title="Quantidade de lados"
+                    WidthRequest="294">
                 
                 <Picker.Items>
                     <x:String>4</x:String>
                     <x:String>6</x:String>
+                    <x:String>8</x:String>
                     <x:String>10</x:String>
+                    <x:String>12</x:String>
                     <x:String>20</x:String>
                     <x:String>100</x:String>
                 </Picker.Items>

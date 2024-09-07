@@ -11,10 +11,9 @@ public partial class MainPage : ContentPage
 
     private void RollerButton_Clicked(object sender, EventArgs e)
     {
-        int value = Convert.ToInt32(EntryPicker.SelectedItem);
-        Random rnd = new Random();
-        int ResultNumber = rnd.Next(value);
-        LabelResult.Text = ResultNumber.ToString();
+        int value = Convert.ToInt32(SidesPicker.SelectedItem.ToString());
+        int ResultNumber = new Random().Next(1, value + 1);
+        ResultLabel.Text = ResultNumber.ToString();
     }
     
     //Sortear um número aleatório através do clique do botão
