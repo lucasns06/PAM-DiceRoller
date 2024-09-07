@@ -22,10 +22,9 @@
         </Style>
     </ContentPage.Resources>
     
-    <ScrollView>
+    <ScrollView BackgroundColor="White">
         <VerticalStackLayout
             HorizontalOptions="Center"
-            BackgroundColor="white"
             Spacing="25"
             Padding="30,0">
 
