@@ -23,7 +23,7 @@
             Padding="30,0">
 
         <Label 
-                Margin="0, 100, 0, 0"
+            Margin="0, 80, 0, 0"
                 Text="ROLADOR DE DADOS"
                 FontSize="32"
                 />
