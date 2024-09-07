@@ -3,11 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiceRoller.MainPage">
 
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="black" ></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="White" ></Setter>
+            <Setter Property="BackgroundColor" Value="#4F4F4F" ></Setter>
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="TextColor" Value="White" ></Setter>
+            <Setter Property="BackgroundColor" Value="White" ></Setter>
+            <Setter Property="TitleColor" Value="Black" ></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        </Style>
+    </ContentPage.Resources>
+    
     <ScrollView>
         <VerticalStackLayout
+            BackgroundColor="white"
             Spacing="25"
             Padding="30,0">
 
+            <Label 
+                Margin="0, 100, 0, 0"
+                Text="ROLADOR DE DADOS"
+                FontSize="32"
+                />
+
+            <Label 
+                x:Name="LabelResult"
+                Text="6"
+                FontSize="80"
+                />
+            
+            <Picker 
+                x:Name="EntryPicker"
+                Title="Quantidade de lados"
+                WidthRequest="294">
+                
+                <Picker.Items>
+                    <x:String>4</x:String>
+                    <x:String>6</x:String>
+                    <x:String>10</x:String>
+                    <x:String>20</x:String>
+                    <x:String>100</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button 
+                x:Name="RollerButton"
+                Text="ROLAR O DADO"
+                WidthRequest="180"
+                HeightRequest="42"
+                Clicked="RollerButton_Clicked"
+                />
         </VerticalStackLayout>
     </ScrollView>
 
