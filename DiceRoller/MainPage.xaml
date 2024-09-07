@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DiceRoller.MainPage">
-
+             x:Class="DiceRoller.MainPage"
+             BackgroundColor="White" >
     <ContentPage.Resources>
         <Style TargetType="Label">
             <Setter Property="TextColor" Value="black" ></Setter>
@@ -21,48 +21,47 @@
             <Setter Property="HorizontalOptions" Value="Center"></Setter>
         </Style>
     </ContentPage.Resources>
-    
-    <ScrollView BackgroundColor="White">
-        <VerticalStackLayout
+
+    <VerticalStackLayout      
             HorizontalOptions="Center"
             Spacing="25"
             Padding="30,0">
 
-            <Label 
+        <Label 
                 Margin="0, 100, 0, 0"
                 Text="ROLADOR DE DADOS"
                 FontSize="32"
                 />
 
-            <Label 
+        <Label 
                 x:Name="ResultLabel"
                 Text="6"
                 FontSize="80"
                 />
-            
-            <Picker x:Name="SidesPicker"
+
+        <Picker x:Name="SidesPicker"
                     Title="Quantidade de lados"
                     WidthRequest="294">
-                
-                <Picker.Items>
-                    <x:String>4</x:String>
-                    <x:String>6</x:String>
-                    <x:String>8</x:String>
-                    <x:String>10</x:String>
-                    <x:String>12</x:String>
-                    <x:String>20</x:String>
-                    <x:String>100</x:String>
-                </Picker.Items>
-            </Picker>
 
-            <Button 
+            <Picker.Items>
+                <x:String>4</x:String>
+                <x:String>6</x:String>
+                <x:String>8</x:String>
+                <x:String>10</x:String>
+                <x:String>12</x:String>
+                <x:String>20</x:String>
+                <x:String>100</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button 
                 x:Name="RollerButton"
                 Text="ROLAR O DADO"
                 WidthRequest="180"
                 HeightRequest="42"
                 Clicked="RollerButton_Clicked"
                 />
-        </VerticalStackLayout>
-    </ScrollView>
+        
+    </VerticalStackLayout>
 
 </ContentPage>
