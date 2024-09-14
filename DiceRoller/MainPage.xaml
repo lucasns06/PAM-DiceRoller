@@ -81,6 +81,10 @@
         <Label x:Name="ResultLabel2"
             Text=""
             />
+
+        <Label 
+            x:Name="ResultLabel3"
+            />
     </VerticalStackLayout>
 
 </ContentPage>

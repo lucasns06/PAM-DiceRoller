@@ -33,6 +33,7 @@ public partial class MainPage : ContentPage
             int qtdDados = Convert.ToInt32(EntryQtdDados.Text.ToString());
             int soma = 0;
             int resultado;
+            int total;
             String exibir = null;
 
             for (int cont = 0; cont < qtdDados; cont++)
@@ -48,10 +49,11 @@ public partial class MainPage : ContentPage
                 resultado = dado.RolarDado();
                 soma = soma + resultado;
 
-                exibir = exibir + resultado + " , ";
+                exibir = exibir + resultado + " + " + modPicker + " , ";
                 
                 ResultLabel2.Text = "Você tirou: " + exibir.ToString();
                 ResultLabel.Text = soma.ToString();
+                ResultLabel3.Text = "Seu resultado total foi: " + soma.ToString();
             }
         }
         catch (Exception ex)
