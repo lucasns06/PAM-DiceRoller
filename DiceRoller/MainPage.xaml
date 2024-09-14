@@ -79,7 +79,7 @@
                 />
 
         <Label x:Name="ResultLabel2"
-            Text="Voce tirou 3+4, 5+4, 10+4 seu resultado foi bla"
+            Text=""
             />
     </VerticalStackLayout>
 
