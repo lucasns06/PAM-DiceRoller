@@ -22,8 +22,7 @@
             Spacing="25"
             Padding="30,0">
 
-        <Label 
-            Margin="0, 80, 0, 0"
+        <Label
                 Text="ROLADOR DE DADOS"
                 FontSize="32"
                 />
@@ -48,7 +47,29 @@
                 <x:String>100</x:String>
             </Picker.Items>
         </Picker>
+        
+        <Label 
+            Text="Insira a qtd de dados"
+            />
 
+        <Entry 
+            x:Name="EntryQtdDados"
+             WidthRequest="294"
+            />
+
+        <Picker     x:Name="ModPicker"
+                   Title="Selecione um modificador por rolagem"
+                   WidthRequest="294">
+            <Picker.Items>
+                <x:String>+1</x:String>
+                <x:String>+2</x:String>
+                <x:String>+3</x:String>
+                <x:String>+4</x:String>
+                <x:String>+5</x:String>
+                <x:String>+6</x:String>
+            </Picker.Items>
+        </Picker>
+        
         <Button 
                 x:Name="RollerButton"
                 Text="ROLAR O DADO"
@@ -56,7 +77,10 @@
                 HeightRequest="42"
                 Clicked="RollerButton_Clicked"
                 />
-        
+
+        <Label x:Name="ResultLabel2"
+            Text="Voce tirou 3+4, 5+4, 10+4 seu resultado foi bla"
+            />
     </VerticalStackLayout>
 
 </ContentPage>

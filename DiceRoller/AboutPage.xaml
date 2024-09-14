@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.AboutPage"
+             Title="AboutPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="TextColor" Value="White" ></Setter>
+            <Setter Property="BackgroundColor" Value="#4F4F4F" ></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout
+        Padding="0, 80, 0, 0">
+        <Border Margin="0, 12, 0, 0" StrokeShape="RoundRectangle 100" HorizontalOptions="Center">
+            <Image Source="perfil.jfif" WidthRequest="120" ></Image>
+        </Border>
+        <Label 
+             Margin="0, 8, 0, 0"
+             Text="Lucas Nascimento"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"
+             FontSize="Title"
+             />
+        <Label 
+            Text="Full stack developer"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Gray"
+         
+            />
+        <Label 
+            Margin="0, 18, 0, 0"
+            Text="Olá, meu nome é Lucas, e eu adoro programar!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            
+            />
+
+        <Label 
+            Margin="0, 50, 0, 20"
+             Text="Meus projetos"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"
+             
+             />
+
+        <Button 
+            x:Name="AboutButton"
+            Text="Github"
+            WidthRequest="150"
+            Clicked="AboutButton_Clicked"/>
+
+        <Label 
+            Margin="0, 220, 0, 0"
+            Text="Curso: Desenvolvimento de sistemas"
+            HorizontalOptions="Center"
+            TextColor="gray"
+              />
+
+        <Label 
+           Margin="0, 10, 0, 0"
+            Text="Professores: Guilherme e Victor"
+            HorizontalOptions="Center"
+            TextColor="gray"
+              />
+        <Label 
+            Margin="0, 10, 0, 0"
+            Text="ETEC Professor Horácio Augusto da Silveira"
+            HorizontalOptions="Center"
+            TextColor="gray"
+              />
+    </VerticalStackLayout>
+</ContentPage>
